@@ -9,14 +9,14 @@ namespace Seleniumon.Tests.PokemonCenter
 {
     internal class NavLinkTest
     { private IWebDriver driver;
-        [SetUp]
+        
         public void SetUp()
         {
             driver = new ChromeDriver();
         }
 
 
-        [Test]
+        
 
 
         //due to security reasons, Selenium tests cannot be used except for once per day on pokecenter site :(
@@ -36,7 +36,7 @@ namespace Seleniumon.Tests.PokemonCenter
             Assert.AreEqual(homePage.pokeCenterBaseURL + "/category/halloween", homePage.halloweenButton.GetAttribute("href"));
         }
 
-        [TearDown]
+       
 
         public void TearDown()
         {

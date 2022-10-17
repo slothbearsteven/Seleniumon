@@ -21,7 +21,6 @@
 
   <ItemGroup>
     <Folder Include="Methods\" />
-    <Folder Include="Tests\PokemonMain\" />
   </ItemGroup>
 
 </Project>
