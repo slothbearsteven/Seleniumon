@@ -8,13 +8,14 @@ namespace Seleniumon.Pages.PokemonCenter
 {
     internal class HomePage
     {
-        //URL for pokemon center (shop): https://www.pokemoncenter.com/
         private IWebDriver driver;
-        public void Homepage(IWebDriver webDriver)
+
+        public HomePage(IWebDriver webdriver)
         {
-            this.driver =  webDriver;
+            this.driver = webdriver;
         }
 
+        public string pokeCenterBaseURL = " https://www.pokemoncenter.com/";
         //Begin Nav Bar items
         public IWebElement newReleasesButton => driver.FindElement(By.Id("new-releases"));
 
@@ -32,7 +33,7 @@ namespace Seleniumon.Pages.PokemonCenter
 
         public void GoToPage()
         {
-            driver.Navigate().GoToUrl("https://www.pokemoncenter.com/");
+            driver.Navigate().GoToUrl(pokeCenterBaseURL);
         }
     }
 }
