@@ -28,6 +28,10 @@ namespace Seleniumon.Tests.PokemonMain
             Assert.AreEqual(homePage.baseURL+"/pokedex/",homePage.pokedexLink.GetAttribute("href"));
             Assert.AreEqual(homePage.baseURL+"/pokemon-tcg/",homePage.tcgLink.GetAttribute("href"));
             Assert.AreEqual(homePage.baseURL+"/pokemon-video-games/",homePage.videoGameAppsLink.GetAttribute("href"));
+            Assert.AreEqual(homePage.baseURL + "/pokemon-episodes/", homePage.tvLink.GetAttribute("href"));
+            Assert.AreEqual(homePage.baseURL + "/play-pokemon/", homePage.playEventsLink.GetAttribute("href"));
+            Assert.AreEqual(homePage.baseURL + "/pokemon-news/", homePage.newsLink.GetAttribute("href"));
+
 
         }
 
